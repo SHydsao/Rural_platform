@@ -1,0 +1,363 @@
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~@/styles/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
+@import '~@/styles/icon/iconfont.css';
+@import "~@/styles/themes/common";
+@import "~@/styles/develop.css";
+@import "~@/styles/base.css";
+
+.el-input__inner{
+  color:$--input-color;
+  border-color: $--input-border-color;
+}
+.el-input__inner:hover{
+  border-color: $--input-hover-color;
+}
+.el-input__inner:focus {
+  border-color: $--input-focus-color;
+}
+
+/*
+  字体颜色class
+*/
+.el-form-item.is-success .el-input__inner, .el-form-item.is-success
+.el-input__inner:focus, .el-form-item.is-success .el-textarea__inner,
+.el-form-item.is-success .el-textarea__inner:focus{
+  border-color:#2A82DB !important;
+}
+.text-primary{
+  color:$--color-primary !important;
+}
+.text-secondary{
+  color:$--color-secondary !important;
+}
+
+.bg-primary{
+  background:$--color-primary !important;
+}
+
+.color-auxiliary1{
+  color:$--color-auxiliary1 !important;
+}
+.color-auxiliary2{
+  color:$--color-auxiliary2 !important;
+}
+.color-auxiliary3{
+  color:$--color-auxiliary3 !important;
+}
+.color-auxiliary4{
+  color:$--color-auxiliary4 !important;
+}
+.color-auxiliary5{
+  color:$--color-auxiliary5 !important;
+}
+.fff{
+  background: #fff;
+}
+.color-auxiliary6{
+  color:$--color-auxiliary6 !important;
+}
+
+.el-table tr{
+  background:#EBEEF3 !important;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td{
+  background:#fff !important;
+}
+/* 重要按钮 */
+.fant-btn-primary{
+  background-color:$--color-primary !important;color:#fff !important;border:0;
+  border-radius:2px;padding: 8px 14px;min-width: 60px;height: 32px;font-size:14px;
+}
+.el-top .el-input__inner{
+  border-color:#2A82DB;
+}
+.el-select:hover .el-input__inner{
+   border-color:#2A82DB !important;
+}
+
+/* 重要按钮2 */
+.fant-btn-secondary{
+  background-color:$--color-secondary !important;color:#fff !important;border:0;
+  border-radius:4px;padding: 8px 10px;min-width: 60px;height: 32px;font-size:14px;
+}
+
+
+.fant-btn-primary:hover,.fant-btn-secondary:hover{
+  filter:opacity(90%); opacity:0.9;  -moz-opacity:0.9;-khtml-opacity: 0.9;
+}
+/* 一般按钮 */
+.fant-btn-general{
+  background-color:$--color-auxiliary5 !important;color:$--color-auxiliary3 !important;border-color:#b4b4b4 !important;
+  border-radius:4px;padding: 8px 10px;min-width: 60px;height: 32px;font-size:14px;
+}
+/* 较弱按钮 */
+.fant-btn-weak{
+  background-color:$--color-auxiliary6 !important;color:$--color-auxiliary3 !important;border-color:#b4b4b4 !important;
+  border-radius:4px;padding: 8px 10px;min-width: 60px;height: 32px;font-size:14px;
+}
+.fant-btn-weak:hover{
+  border-color:$--color-primary !important;
+}
+/* 重要按钮2 反色 */
+.fant-btn-primary2{
+  border-color:$--color-primary !important;color:$--color-primary!important;background:#fff;
+  border-radius:4px;padding: 8px 10px;min-width: 60px;height: 32px;font-size:14px;
+}
+.fant-btn-primary2:hover{
+  background:$--color-primary2!important;
+}
+.fant-btn-secondary2,.fant-btn-secondary2:active{
+  border-color:$--color-secondary !important;color:$--color-secondary!important;background:#fff!important;
+  border-radius:4px;padding: 8px 10px;min-width: 60px;height: 32px;font-size:14px;
+}
+
+
+/* 重要按钮3 反色 */
+.fant-btn-third{
+  border-color:$--color-third !important;color:$--color-third!important;background:#fff;
+  border-radius:4px;padding: 8px 10px;min-width: 60px;height: 32px;font-size:14px;
+}
+.fant-btn-third:hover{
+  background:$--color-primary2 !important;
+}
+.fant-btn-third,.fant-btn-third:active{
+  border-color:$--color-third !important;color:$--color-third !important;background:#fff!important;
+  border-radius:4px;padding: 8px 10px;min-width: 60px;height: 32px;font-size:14px;
+}
+
+.cx >>> .el-input input{
+  border-color:$--color-primary!important;
+}
+
+.fant-btn-secondary2:hover{
+  background:#D9EBFB!important;;
+}
+.fant-btn-secondary.is-disabled,
+.fant-btn-secondary.is-disabled:hover,
+.fant-btn-secondary.is-disabled:focus,
+.fant-btn-primary2.is-disabled,
+.fant-btn-primary2.is-disabled:hover,
+.fant-btn-primary2.is-disabled:focus,
+.fant-btn-secondary2.is-disabled,
+.fant-btn-secondary2.is-disabled:hover,
+.fant-btn-secondary2.is-disabled:focus{border-color:#b4b4b4!important;background:#fff!important;color:#b4b4b4!important;}
+
+
+.fant-btn-primary.is-disabled,
+.fant-btn-primary.is-disabled:hover,
+.fant-btn-primary.is-disabled:focus{
+  border-color:none !important;background:rgba(42, 130, 219, 0.5803921568627451)!important;
+}
+
+
+.el-dialog__body{
+  padding:10px;
+}
+/**
+（重要）嵌套路由中的弹窗定位
+ */
+.el-dialog__wrapper{
+  position:absolute;
+}
+.treebox-selected{
+  background:$--color-primary !important;
+  color:#fff !important;
+}
+.el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content{
+  color:$--color-primary;
+}
+.fant-help-btn{
+  position:absolute;
+  bottom:80px;
+  width:100%;
+  text-align:center;
+}
+.flipx {
+  -moz-transform:scaleX(-1);
+  -webkit-transform:scaleX(-1);
+  -o-transform:scaleX(-1);
+  transform:scaleX(-1);
+  /*IE*/
+  filter:FlipH;
+}
+
+.pswp__bg{
+  background:rgba(0,0,0,0.7) !important;
+}
+/*el-table样式*/
+.el-table th {
+  background-color: #eeeeee;
+}
+.el-table{
+  border: 1px solid #d2d2d2;
+}
+.el-table th.is-leaf, .el-table td {
+  border-bottom: 1px solid #d2d2d2;
+}
+.el-table__footer-wrapper td {
+  border-top: 1px solid #d2d2d2;
+}
+.el-table--border th, .el-table--border td {
+  border-right: 1px solid #d2d2d2;
+}
+.el-table thead {
+  color: #000;
+}
+.el-table--small th, .el-table--small td {
+  padding: 0;
+  height:40px;
+}
+.fantTable >>> .el-form-item{
+  margin-bottom:0;
+}
+.fantTable >>> .td{
+  padding:0;
+}
+.el-table >>> .el-form-item{
+  margin-bottom:0;
+}
+.searchBar .el-dialog__body{
+  background:#fff;
+}
+.el-dialog__wrapper{
+  background-color:rgba(0,0,0,0.2);
+}
+.el-message-box__wrapper{
+  background-color:rgba(0,0,0,0.2);
+}
+.el-dialog__wrapper .el-dialog{
+  background: #f5f5f5;
+}
+.el-dialog .footer{
+  position:absolute;
+  bottom:10px;
+  width:calc(100% - 10px);
+  float:left;
+}
+.el-dialog__header{
+  font-size:14px;
+  font-weight:bold;
+  color:#666;
+  padding:5px;
+  background:#f6f6f6;
+  border-bottom:solid 1px #ddd;
+}
+.formBox .el-table th.is-leaf, .el-table td{
+  border:none !important;
+}
+
+.formBox .form-box .el-table th.is-leaf, .el-table td{
+  border-bottom:1px solid #D8D8D8 !important;
+  box-sizing:border-box;
+}
+// .formBox.none .form-box .el-table th.is-leaf, .el-table td{
+//   border-bottom:none !important;
+// }
+.has-gutter tr.fant-table-header-row {
+  background:$--color-primary !important;
+}
+.el-table--group::after, .el-table--border::after, .el-table::before{
+  // background:$--color-primary !important;
+  // background: #fff !important;
+  background:transparent !important;
+}
+.color2 .has-gutter tr.fant-table-header-row {
+  background: #EBEBEB !important;
+}
+.el-table th{
+  background:none !important;
+}
+.el-table{
+  border-color:$--color-primary;
+  // border:none !important;
+}
+.el-table thead{
+  color:#fff;
+}
+.el-dialog__headerbtn{
+  top:5px;right:5px;
+}
+.el-form-item__error{
+  float:left;
+  position:fixed;
+  display:block;
+  z-index:10000;
+}
+.fantTable .el-form-item--small.el-form-item{
+  margin:0;
+  width:100%;
+}
+.fantTable .el-form-item--small.el-form-item .el-form-item__content{
+  width:100%;
+}
+.fantTable .el-table__body tr.current-row > td,.fantTable .el-table--striped .el-table__body tr.el-table__row--striped.current-row td,
+.fantTable .el-table--enable-row-hover .el-table__body tr:hover > td{background:#dae2f1 !important;}
+.check-on-select .el-table__body tr.current-row > td {
+  background-color: transparent !important;
+}
+/* 当table组件的multiple和checkOnSelect为true时的选择行特例css*/
+.fantTable.check-on-select .el-table__body tr.fant-current-row > td,.fantTable.check-on-select .el-table--striped .el-table__body tr.el-table__row--striped.fant-current-row td,
+.fantTable.check-on-select .el-table--enable-row-hover .el-table__body tr:hover > td{background:#dae2f1 !important;}
+.fant-table-form .el-form-item__content{
+  margin-left:0 !important;
+}
+.el-table .cell{
+  padding-right:0 !important;
+  text-align: center;
+}
+.fant-table-form{
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  width: calc(100% - 20px);
+}
+.treeBtn{
+  display:block;
+  margin-left:0 !important;
+}
+.fant-select-toolsBar{
+  border-top: solid 1px #e4e7ed;
+  background: #F5F5F5;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  top: calc(100% - 30px);
+  width: 100%;
+}
+.fant-select-header{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-bottom: solid 1px #e4e7ed;
+  background: #F5F5F5;
+  height: 30px;
+  line-height: 30px;
+  z-index: 10000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 20px;
+}
+.fant-header-add{
+  padding-top:30px
+}
+.fant-footer-add{
+  padding-bottom:30px
+}
+
+/*解决生产环境下字体库优先级低的问题*/
+[class^="el-icon-fant"], [class*=" el-icon-fant"]/*这里有空格*/  {
+  font-family: "iconfont" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  display: inline-block;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
